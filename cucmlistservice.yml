@@ -1,2 +1,4 @@
----
-utils service list
+- name: Check if SSHD is running
+  hosts: all
+  command: utils service list
+  ignore_errors: yes
