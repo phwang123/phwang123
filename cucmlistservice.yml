@@ -1,3 +1,2 @@
-gather_facts: no
-- name: List user accounts on a Windows system
-  raw: utils list service
+- name: Run command if /path/to/database does not exist (without 'args')
+  ansible.builtin.command: utils list service
