@@ -1,10 +1,13 @@
 ---
-  - name: Wait 60 seconds, but only start checking after 60 seconds
+ - name: Wait 600 seconds for target connection to become reachable/usable
   wait_for_connection:
-    delay: 30
-    timeout: 60
--
-  hosts: edcccmpub.hollard.group
+
+- name: Wait 300 seconds, but only start checking after 60 seconds
+  wait_for_connection:
+    delay: 60
+    timeout: 300
+    
+- hosts: edcccmpub.hollard.group
   gather_facts: no
   tasks:
     - shell: utils list services
