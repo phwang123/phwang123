@@ -1,2 +1,5 @@
-- name: Run command if /path/to/database does not exist (without 'args')
-  ansible.builtin.command: utils list service
+- hosts: edcccmpub.hollard.group
+  - name: "Get service list"
+  raw: utils list service
+  register: listx
+  gather_facts: no
