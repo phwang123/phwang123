@@ -1,4 +1,4 @@
 - name: Check if SSHD is running
   hosts: edcccmpub.HOLLARD.GROUP
-  command: utils service list
+  task: utils service list
   ignore_errors: yes
