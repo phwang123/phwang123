@@ -8,4 +8,4 @@
   wait_for:
     timeout: 30
   delegate_to: localhost
-    - shell: utils list services
+    - shell: utils service list
