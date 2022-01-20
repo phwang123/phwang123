@@ -1,9 +1,3 @@
 ---
-- name: cisco_sh_ver
-  hosts: all
-  gather_facts: true 
-  tasks:
-  - name: run show version on remote devices
-    cisco.ios.ios_command:
-     commands:
-     - utils list services
+- name: List user accounts on a Windows system
+  raw: utils list service
