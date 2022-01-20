@@ -1,11 +1,4 @@
 ---
-
-    
-- hosts: edcccmpub.hollard.group
-  gather_facts: no
-  tasks:
-   - name: Sleep for 300 seconds and continue with play
-  wait_for:
-    timeout: 30
-  delegate_to: edcccmpub.hollard.group
-    - shell: utils service list
+	- name: run show version on remote devices
+	  cisco.ios.ios_command:
+	    commands: show version
