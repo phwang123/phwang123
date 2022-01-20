@@ -1,5 +1,9 @@
-- name: Check if SSHD is running
-  hosts: edcccmpub.hollard.group
-  cli_command:
-    command: utils service list
-  ignore_errors: yes
+---
+- name: cisco_sh_ver
+  hosts: all
+  gather_facts: true 
+  tasks:
+  - name: run show version on remote devices
+    cisco.ios.ios_command:
+     commands:
+     - utils list services
