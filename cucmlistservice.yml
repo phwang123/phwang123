@@ -1,5 +1,6 @@
-- hosts: edcccmpub.hollard.group
-  - name: "Get service list"
-  raw: utils list service
-  register: listx
+---
+-
+  hosts: edcccmpub.hollard.group
   gather_facts: no
+  tasks:
+    - shell: utils list services
