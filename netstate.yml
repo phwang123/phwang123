@@ -1,5 +1,5 @@
 - name: test cmd from win_command module
-  hosts: windows
+  hosts: chwaqmrec01.hollard.group
   tasks:
     - name: run netstat and return Ethernet stats 
       win_command: netstat -e
