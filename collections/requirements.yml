@@ -1,4 +1,0 @@
----
-collections:
-  - name: cisco.iosxr
-  - name: cisco.ios
