@@ -1,5 +1,7 @@
 ---
 - hosts: 192.168.30.254
+collections: 
+- cisco.ios
 - name: run show version on remote devices
   cisco.ios.ios_command:
     commands: show version
