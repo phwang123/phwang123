@@ -1,5 +1,5 @@
 ---
-- host: edcccmpub.hollard.group
+- host: 192.168.30.254
 - name: run show version on remote devices
   cisco.ios.ios_command:
     commands: show version
