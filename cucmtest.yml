@@ -1,10 +1,10 @@
 ---
 - hosts: 192.168.30.254
   gather_facts: true 
-#- name: run show version on remote devices
-#  cisco.ios.ios_command:
-#    commands: show version
+- name: run show version on remote devices
+  cisco.ios.ios_command:
+    commands: show version
     
- - name: reboot ios device
-  cli_command:
-    command: show verions
+ #- name: reboot ios device
+ # cli_command:
+ #   command: show verions
